@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>COMP 2132 Dice Game</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>COMP 2132 - Dice Game</h1>
+        </header>
+        <main>
+            <div id="imgWrapper">
+                <img src="images/1.jpeg" alt="Dice 1">
+                <img src="images/2.jpeg" alt="Dice 2">
+                <img src="images/3.jpeg" alt="Dice 3">
+                <img src="images/4.jpeg" alt="Dice 4">
+                <img src="images/5.jpeg" alt="Dice 5">
+                <img src="images/6.jpeg" alt="Dice 6">
+            </div>
+            <h2>Can you beat your opponent at a game of chance?</h2>
+
+            <div class="yourPanel">
+                <div class="playerName" id="name0">You</div>
+                <img src="images/d1.jpeg" alt="roll: 1" id="myDice1">
+                <img src="images/d1.jpeg" alt="roll: 1" id="myDice2">
+                <div class="playerScore" id="score0">-</div>
+                <div class="playerCurrentBox">
+                    <div class="playerCurrentLabel">Current</div>
+                    <div class="playerCurrentScore" id="current0">-</div>
+                </div>
+                <div class="playerTotalBox">
+                    <div class="playerTotalLabel">Total</div>
+                    <div class="playerTotalScore" id="total0">-</div>
+                </div>
+            </div>
+
+            <div class="opponentPanel">
+                <div class="playerName" id="name1">Opponent</div>
+                <img src="images/d1.jpeg" alt="roll: 1" id="theirDice1">
+                <img src="images/d1.jpeg" alt="roll: 1" id="theirDice2">
+                <div class="playerScore" id="score1">-</div>
+                <div class="playerCurrentBox">
+                    <div class="playerCurrentLabel">Current</div>
+                    <div class="playerCurrentScore" id="current1">-</div>
+                </div>
+                <div class="playerTotalBox">
+                    <div class="playerTotalLabel">Total</div>
+                    <div class="playerTotalScore" id="total1">-</div>
+                </div>
+            </div>
+            <div class="center">
+                <button id="startBtn">Roll the Dice</button>
+                <button id="stopBtn">Start Over</button>
+            </div>
+
+
+            <h3>How to Play:</h3>
+                <button class="dropBtn">Show me</button>
+                <div class="dropdownText">
+                    <ul>
+                        <li>To start, click the 'Roll the Dice' button.</li>
+                        <li>To keep the rounds going, click on 'Roll the Dice' again.</li>
+                        <li>After 3 rounds, the game is over and the score is calculated.</li>
+                        <li>If you want to play again, click the 'Start Over/Reset' button or refresh your page.</li>
+                    </ul>
+                </div>
+                <h3>Rules:</h3>
+                <button class="dropBtn">Show me</button>
+                <div class="dropdownText">
+                    <ul>
+                        <li>If any of your two dice comes up as 1, the total score would = 0 for the round.</li>
+                        <li>Roll doubles (ex. 5 & 5) to have your score multiplied by 2!</li>
+                        <li>Roll any other combination, and the sum gets added together.</li>
+                        <li>Player who has the most points at the end, wins.</li>
+                    </ul>
+                </div>
+                <div class="clear">
+                </div>
+        </main>
+        <footer>
+            COMP 2132
+        </footer>
+    </div>  
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
